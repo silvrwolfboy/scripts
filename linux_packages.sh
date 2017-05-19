@@ -15,3 +15,4 @@ then
 	apt install vim mtr traceroute nmap curl wget htop ftp gcc make coreutils -y
 	apt autoremove -y
 fi
+
