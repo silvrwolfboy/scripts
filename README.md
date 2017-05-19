@@ -14,6 +14,6 @@ scripts description
 
 * shellcheck_curl.sh - Check shellscript with shellcheck, without saving the script; Functioning like curl + bash syntax checker
 
-* torcheck/torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
+* torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
 
 * cronjobs/maintainance_update.sh - specific sysadmin's tools upgrade
