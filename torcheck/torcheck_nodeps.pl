@@ -78206,6 +78206,7 @@ unshift @INC, bless \%fatpacked, $class;
   } # END OF FATPACK CODE
 
 
+# Check if user connected through tor layer network (for torsocks user)
 use warnings;
 use LWP::Simple 'get';
 use Mojo::DOM;

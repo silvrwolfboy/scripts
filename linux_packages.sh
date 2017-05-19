@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install sysadmin package bundle for either debian family or redhat famility distro
+# install sysadmin package bundle for either debian or redhat family distro
 
 if [[ $EUID != 0 ]]
 then
