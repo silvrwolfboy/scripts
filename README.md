@@ -1,6 +1,6 @@
 scripts
 ---
-Some Linux specific scripts that I use in Ubuntu and CentOS homelab.
+Some Linux specific scripts that I use in Ubuntu/Debian and CentOS homelabs.
 
 note
 ---
@@ -16,4 +16,4 @@ scripts description
 
 * torcheck/torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
 
-* cronjobs/maintainance_update.sh - specific sysadmin's tools upgrad
+* cronjobs/maintainance_update.sh - specific sysadmin's tools upgrade
