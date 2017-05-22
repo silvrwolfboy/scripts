@@ -17,3 +17,5 @@ scripts description
 * torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
 
 * cronjobs/maintainance_update.sh - specific sysadmin's tools upgrade
+
+* centos6 - Scripts for centos6, to configure local cpanm and root httpd install
