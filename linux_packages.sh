@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install sysadmin package bundle for either debian or redhat family distro
+# install sysadmin package bundle for debian family distro
 
 if [[ $EUID != 0 ]]
 then
@@ -8,11 +8,6 @@ then
 	exit 1
 fi
 
-# for debian or ubuntu based family
-if [[ $(uname -a | grep -i 'ubuntu\|debian') ]]
-then
-	apt update -y
-	apt install vim mtr traceroute nmap curl wget htop ftp gcc make coreutils -y
-	apt autoremove -y
-fi
-
+apt update -y
+apt install vim mtr traceroute nmap curl wget htop ftp gcc make coreutils -y
+apt autoremove -y

@@ -7,6 +7,6 @@ then
 fi
 
 # install root level tools
-yum install perl perl-devel tar wget vim gcc httpd
+yum install perl perl-devel tar wget vim gcc httpd crontabs
 
 exit $?
