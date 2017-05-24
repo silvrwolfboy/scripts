@@ -9,7 +9,7 @@ then
 fi
 
 # setup httpd (servername misleading)
-perl -p -i -e 's/\#ServerName www\.example\.com\:80/ServerName localhost/' etc/httpd/conf/httpd.conf
+perl -p -i -e 's/\#ServerName www\.example\.com\:80/ServerName localhost/' /etc/httpd/conf/httpd.conf
 
 # check if the setting doesn't result any error
 apache2ctl configtest
