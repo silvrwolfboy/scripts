@@ -10,4 +10,7 @@ rm -f cpanm.pl
 # make cpanm accessible from anywhere in the user session
 echo 'export $PATH="$HOME/perl5/bin:$PATH"' >> $HOME/.bashrc
 
+# make the change global right away
+source $HOME/.bashrc
+
 exit $?
