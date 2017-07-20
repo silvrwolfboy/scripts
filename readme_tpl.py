@@ -6,10 +6,12 @@ PROJECT_NAME = sys.argv[1]
 choice = sys.argv[2]
 
 def license_template():
-    if choice == "GPL3":
-       shutil.copyfile('/usr/share/common-licenses/GPL-3', 'LICENSE')    
+    if choice == "APACHE2":
+       shutil.copyfile('/usr/share/common-licenses/Apache-2.0', 'LICENSE')
+    elif choice == "MIT":
+        shutil.copyfile('/usr/share/common-licenses/MIT')
     else:
-        shutil.copyfile('/usr/share/common-licenses/Apache-2.0', 'LICENSE')
+        shutil.copyfile('/usr/share/common-licenses/GPL-3', 'LICENSE')
 
 def write_readme():
     TEMPLATE = """{}
