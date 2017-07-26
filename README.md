@@ -19,4 +19,7 @@ scripts description
 * cronjobs/maintainance_update.sh - specific sysadmin's tools upgrade
 
 * centos6 - Scripts for centos6, to configure local cpanm and root httpd install
-* readme_tpl.py - Python script to generate README.md and COPYING (license) templates
+
+* readme_tpl.py - Python script to generate README.md and LICENSE (license) templates
+
+* install_perl_ai_mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
