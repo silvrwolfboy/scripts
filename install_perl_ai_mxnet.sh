@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# for ubuntu 14.05 and newer, including Debian Jessie or newer
+# for ubuntu 14.04 and newer, including Debian Jessie and newer
 sudo apt update
 sudo apt install -y build-essential libopenblas-dev liblapack-dev libopencv-dev
 
@@ -18,6 +18,6 @@ make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas
 # if no cpanm
 cpan AI::MXNet
 
-echo "AI::MXNet library installed."
+echo "AI::MXNet module installed"
 
 
