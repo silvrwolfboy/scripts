@@ -10,14 +10,12 @@ tar -xvzf "0.10.0.post2.tar.gz"
 cd mxnet-0.10.0.post2
 
 # build mxnet
-make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas
+make -j "$(nproc)" USE_OPENCV=1 USE_BLAS=openblas
 
 # install mxnet module from CPAN
 [[ command -v cpanm ]] && cpanm AI::MXNet
 
 # if no cpanm
-cpan AI::MXNet
-
-echo "AI::MXNet module installed"
+cpan AI::MXNet && echo "AI::MXNet module installed"
 
 
