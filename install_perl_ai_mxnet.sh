@@ -13,7 +13,7 @@ cd mxnet-0.10.0.post2
 make -j "$(nproc)" USE_OPENCV=1 USE_BLAS=openblas
 
 # install mxnet module from CPAN
-[[ command -v cpanm ]] && cpanm AI::MXNet
+[[ (command -v cpanm) ]] && cpanm AI::MXNet && echo "AI::MXNet module installed"
 
 # if no cpanm
 cpan AI::MXNet && echo "AI::MXNet module installed"
