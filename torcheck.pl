@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 # Check if user connected through tor layer network (for torsocks user)
-use warnings;
+use warnings;use strict;
 use LWP::Simple 'get';
 use Mojo::DOM;
 use v5.10;
