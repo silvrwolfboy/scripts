@@ -23,3 +23,5 @@ scripts description
 * readme_tpl.py - Python script to generate README.md and LICENSE (license) templates
 
 * install_perl_ai_mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
+
+* install_liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
