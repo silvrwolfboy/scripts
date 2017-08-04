@@ -18,31 +18,25 @@ def license_template():
         return "GPL3"
 
 def write_readme():
-    TEMPLATE = """{}
-----
+    TEMPLATE = """# {}
 
-### Getting Started
-<hr>
+## Getting Started
 
-#### Prerequisites
+### Prerequisites
         
-#### Installing
+### Installing
 
-### Running the tests
-<hr>
+## Running the tests
 
-### Built With
-<hr>
+## Built With
 *
 *
 *
 
-### Authors
-<hr>
+## Authors
 * faraco <skelic3@gmail.com>
         
-### License
-<hr>
+## License
 This project is licensed under the {} License - see the LICENSE file for details.
 
     """.format(PROJECT_NAME, license_template())
