@@ -25,3 +25,5 @@ scripts description
 * install_perl_ai_mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
 
 * install_liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
+
+* lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security (you need to install it by yourself and insert your custom passwords and configs).
