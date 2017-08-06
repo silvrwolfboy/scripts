@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install liteide linux 32 bit golang ide in /usr/local
+# install liteide linux 32 bit golang ide into /usr/local
 wget -c "https://downloads.sourceforge.net/project/liteide/X32.2/liteidex32.2.linux32-qt4.tar.bz2?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fliteide%2Ffiles%2FX32.2%2F&ts=1501868660&use_mirror=jaist" -O liteide.tar.bz2
 
 tar -xf liteide.tar.bz2
