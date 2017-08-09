@@ -27,3 +27,5 @@ scripts description
 * install_liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
 
 * lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security (you need to install it by yourself and insert your custom passwords and configs).
+
+* laravel_deps.sh - Install required php (v7.+) extensions for laravel's 5.4+ web framework
