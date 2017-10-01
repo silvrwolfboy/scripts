@@ -29,3 +29,5 @@ scripts description
 * lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security (you need to install it by yourself and insert your custom passwords and configs).
 
 * laravel_deps.sh - Install required php (v7.+) extensions for laravel's 5.4+ web framework
+
+* server_here.sh - python3 http.server wrapper
