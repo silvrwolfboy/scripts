@@ -31,3 +31,5 @@ scripts description
 * laravel_deps.sh - Install required php (v7.+) extensions for laravel's 5.4+ web framework
 
 * server_here.sh - python3 http.server wrapper
+
+* stop_mysqld.sh - Stop if mysqld (daemon) is running.
