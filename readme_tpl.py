@@ -23,22 +23,21 @@ def write_readme():
 ## Getting Started
 
 ### Prerequisites
-        
-### Installing
+
+
+### Running the program
+
 
 ## Running the tests
 
-## Built With
-*
-*
-*
 
 ## Authors
-* faraco <skelic3@gmail.com>
+
+* [faraco](https://github.com/faraco) <skelic3@gmail.com>
         
 ## License
-This project is licensed under the {} License - see the LICENSE file for details.
 
+This project is licensed under the {} License - see the LICENSE file for details.
     """.format(PROJECT_NAME, license_template())
 
     with open('README.md','w') as f:

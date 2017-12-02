@@ -7,9 +7,9 @@ mysqld_status=$(service --status-all | awk '/mysql/ {print $2}')
 
 if [[ $mysqld_status == '+' ]];then
         sudo service mysql stop
-        echo "mysql daemon stopped."
+        printf "\n\nmysqld daemon stopped.\n"
 
 else
-        echo "mysql daemon is not running."
+        printf "\n\nmysqld daemon is not running.\n"
 fi
 
