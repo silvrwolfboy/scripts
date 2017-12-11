@@ -33,3 +33,5 @@ scripts description
 * server_here.sh - python3 http.server wrapper
 
 * stop_mysqld.sh - Stop if mysqld (daemon) is running.
+
+* ext.sh - Gives extension of a file.
