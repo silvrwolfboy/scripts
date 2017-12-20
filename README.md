@@ -35,3 +35,7 @@ scripts description
 * stop_mysqld.sh - Stop if mysqld (daemon) is running.
 
 * ext.sh - Gives extension of a file.
+
+* chars.sh - Generate random strings.
+
+* df_alert.pl - Alert user if /dev/sda1 storage size exceeds 60%.
