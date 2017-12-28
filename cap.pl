@@ -2,7 +2,7 @@
 
 # Append GPL3 license notice after matched the "use strict"; pattern in place.
 # Usage:
-# ./perl -i cap.pl file
+# perl -i cap.pl file
 #
 use strict;
 use warnings;
