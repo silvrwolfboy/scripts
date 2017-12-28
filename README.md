@@ -39,3 +39,5 @@ scripts description
 * chars.sh - Generate random strings.
 
 * df_alert.pl - Alert user if /dev/sda1 storage size exceeds 60%.
+
+* cap.pl - Append GPL3 license notice after "use strict"; pattern matched.
