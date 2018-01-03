@@ -10,8 +10,8 @@ use warnings;
 my $GPL_LICENSE = <<'END_LICENSE';
 
 /*
-    blue-beanie - A 2D run-and-collect web video game.
-    Copyright (C) 2017 faraco <skelic3@gmail.com>
+    -Insert project name and what it does.-
+    Copyright (C) 2018 faraco <skelic3@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
