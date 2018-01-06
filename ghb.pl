@@ -15,6 +15,7 @@ my $result = $repos->list(user => 'faraco');
 # So, we decode the node and make the git_url easily accessible.
 my $decoded_json = decode_json $result->{response}{_content};
 
+# Clone all of repo using git_url link.
 foreach my $content_node (@{$decoded_json})
 {
     system("git clone $content_node->{git_url}");
