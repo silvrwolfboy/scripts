@@ -15,7 +15,7 @@ def license_template():
         return "MIT"
     else:
         shutil.copyfile('/usr/share/common-licenses/GPL-3', 'LICENSE')
-        return "GPL3"
+        return "GPL-3.0"
 
 def write_readme():
     TEMPLATE = """# {}
@@ -24,14 +24,13 @@ def write_readme():
 
 ### Prerequisites
 
-
 ### Running the program
 
 
 ## Running the tests
 
 
-## Authors
+## Author
 
 * [faraco](https://github.com/faraco) <skelic3@gmail.com>
         
