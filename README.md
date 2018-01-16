@@ -43,3 +43,5 @@ scripts description
 * cap.pl - Append GPL3 license notice after "use strict"; pattern matched.
 
 * ghb.pl - Backup all of my Github's public repositories to local computer.
+
+* psgi_heroku.sh - Create Heroku's stack for Perl 5 + Plack web application hosting.
