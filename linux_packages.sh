@@ -9,5 +9,5 @@ then
 fi
 
 apt update -y
-apt install vim mtr traceroute nmap curl wget htop ftp gcc make coreutils -y
+apt install vim mtr traceroute nmap curl netcat wget htop ftp gcc make coreutils -y
 apt autoremove -y
