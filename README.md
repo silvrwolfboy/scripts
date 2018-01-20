@@ -10,8 +10,7 @@ scripts description
 ---
 * linux_packages.sh - install sysadmin package bundle for either debian or redhat family distro
 
-* shellcheck_curl.sh - Check shellscript with shellchec
-as email => (is => 'ro');
+* shellcheck_curl.sh - Check shellscript with shellcheck_curl.sh
 k, without saving the script; Functioning like curl + bash syntax checker
 
 * torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
