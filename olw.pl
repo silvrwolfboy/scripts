@@ -1,7 +1,11 @@
+#!/usr/bin/env perl
+
 use strict;
 use warnings;
 use autodie;
 use v5.10;
+
+use File::Temp 'tempfile';
 
 print "What is your article number?: ";
 my $number = <STDIN>;
@@ -14,9 +18,20 @@ chomp $title;
 
 my $title_in_article = ucfirst $title;
 
-print "Write your article content: ";
-my $content = <STDIN>;
-chomp $content;
+print "Write your article content using vim? ";
+<STDIN>;
+
+my $content;
+my $file_to_read = int(rand(100000)) . "-olw.txt";
+system("vim $file_to_read");
+
+open(my $fr, '<', $file_to_read);
+{
+    local $/;
+    $content = <$fr>;
+}
+close $fr;
+unlink $file_to_read;
 
 my $html_template = <<"END_TEMPLATE";
 <!DOCTYPE html>
