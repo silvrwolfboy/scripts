@@ -40,7 +40,8 @@ my $html_template = <<"END_TEMPLATE";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>$title_in_article</title>
-
+    
+    <body>
     <h1>faraco's personal site</h1>
     <p>
     <ul>
@@ -55,8 +56,9 @@ my $html_template = <<"END_TEMPLATE";
     <p>$content</p>
     
     <hr>
-    <footer>
-    <p style="text-align: centered">Made with simplicity in mind by <b>faraco</b></p>
+    <p style="text-align: center;">Made with simplicity by <b>faraco</b></p>
+    <hr>
+    </body>
 </html>
 END_TEMPLATE
 
