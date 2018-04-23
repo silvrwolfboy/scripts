@@ -5,8 +5,6 @@ use warnings;
 use autodie;
 use v5.10;
 
-use File::Temp 'tempfile';
-
 print "What is your article number?: ";
 my $number = <STDIN>;
 die "Must be a number!" if $number !~ /[0-9]+/;
