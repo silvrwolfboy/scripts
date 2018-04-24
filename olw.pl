@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use autodie;
-use v5.10;
+use DateTime;
 
 print "What is your article number?: ";
 my $number = <STDIN>;
@@ -31,6 +31,9 @@ open(my $fr, '<', $file_to_read);
 close $fr;
 unlink $file_to_read;
 
+my $dt = DateTime->now;
+my $written_time = $dt->dmy;
+
 my $html_template = <<"END_TEMPLATE";
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +46,7 @@ my $html_template = <<"END_TEMPLATE";
     <h1>faraco's personal site</h1>
     <p>
     <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="https://twitter.com/_faraco">faraco's Twitter</a></li>
         <li><a href="https://github.com/faraco">faraco's Github</a></li>
     </ul>
@@ -51,6 +55,7 @@ my $html_template = <<"END_TEMPLATE";
     <hr>
     
     <h1>$title_in_article</h1>
+    <h2>$written_time</h2>
     <p>$content</p>
     
     <hr>
