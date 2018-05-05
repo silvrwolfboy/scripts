@@ -6,11 +6,11 @@ PROJECT_NAME = sys.argv[1]
 choice = sys.argv[2]
 
 def license_template():
-    if choice == "APACHE2" or "apache2" or "apache":
+    if choice == "APACHE2" or choice == "apache" or choice == "apache2":
         shutil.copyfile('/usr/share/common-licenses/Apache-2.0', 'LICENSE')
         return "Apache 2.0"
 
-    elif choice == "MIT" or "mit":
+    elif choice == "MIT" or choice == "mit":
         shutil.copyfile('/usr/share/common-licenses/MIT', 'LICENSE')
         return "MIT"
     else:
