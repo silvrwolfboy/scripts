@@ -13,6 +13,10 @@ def license_template():
     elif choice == "MIT" or choice == "mit":
         shutil.copyfile('/usr/share/common-licenses/MIT', 'LICENSE')
         return "MIT"
+
+    elif choice == "AGPL" or choice == "agpl":
+        shutil.copyfile('/usr/share/common-licenses/AGPL-3', 'LICENSE')
+        return "AGPL-3.0"
     else:
         shutil.copyfile('/usr/share/common-licenses/GPL-3', 'LICENSE')
         return "GPL-3.0"
