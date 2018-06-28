@@ -1,4 +1,4 @@
-#source /etc/profile.d/rvm.sh!/usr/bin/env perl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;
