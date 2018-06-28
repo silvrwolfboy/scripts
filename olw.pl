@@ -109,7 +109,7 @@ sub write_to_file
     my $title   = $result->{title};
     my $content = $result->{content};
 
-    # I don't want the file to be clean and
+    # I want the file to be clean and
     # easy to find, so I remove all symbols
     # and replace all whitespaces with dash '-'.
     $title =~ tr/\'\"!\?@#$%^&*()-+[]{}|;:,\.\///d;
