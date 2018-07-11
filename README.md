@@ -1,9 +1,9 @@
 scripts
----
+-------
 Some useful Linux system administration scripts.
 
 note
----
+----
 * cronjobs/ directory are for cron jobs scripts.
 
 scripts description
