@@ -52,3 +52,5 @@ k, without saving the script; Functioning like curl + bash syntax checker
 * pytempl.sh - Simple script to build a template directory for Python 3 project built on top of readme_tpl.py
 
 * olw.pl - Simple HTML template generator perl script for my 'old-school' personal site.
+
+* csc-bundler.sh - A simple Chicken Scheme bundler script to pack everything(eggs, chicken's shared libraries) into a single directory that you can distribute to your friends!
