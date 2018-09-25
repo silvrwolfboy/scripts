@@ -1,15 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-# Append GPL3 license notice into the top of a non-blank existing file.
+# Append GPL3 license notice into the top of ian existing file.
 # Note: If you just trying to append to an empty file, just use
 # echo "data" | cat >> empty_file.txt
 # Usage:
 # cap <file>
 #
 
-gpl_license=$(cat <<'END_LICENSE'
-/*
-    -Insert project name and what it does-
+import sys
+gpl_license = '''/*    -Insert project name and what it does-
     Copyright (C) 2018 faraco <skelic3@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
@@ -24,8 +23,12 @@ gpl_license=$(cat <<'END_LICENSE'
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-END_LICENSE
-)
 
-sed -i '1 s/^/YES!\n/' lol
+*/
+'''
+
+with open(sys.argv[1], 'r+') as f:
+    content = f.read()
+    f.seek(0, 0)
+    f.write(gpl_license.rstrip('\r\n') + '\n' + content)
+
