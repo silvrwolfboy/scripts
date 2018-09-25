@@ -36,7 +36,7 @@ scripts description
 
 * df_alert.sh - Alert user if /dev/sda1 storage size exceeds 60%.
 
-* cap.pl - Append GPL3 license notice after "use strict"; pattern matched.
+* cap.sh - Append GPL3 license notice to the top of a non-blank existing file.
 
 * ghb.py - Backup all of my Github's public repositories to local computer.
 

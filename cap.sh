@@ -1,16 +1,15 @@
-#!/usr/bin/perl -ln
+#!/bin/bash
 
-# Append GPL3 license notice after matched the "use strict"; pattern in place.
+# Append GPL3 license notice into the top of a non-blank existing file.
+# Note: If you just trying to append to an empty file, just use
+# echo "data" | cat >> empty_file.txt
 # Usage:
-# perl -i cap.pl file
+# cap <file>
 #
-use strict;
-use warnings;
 
-my $GPL_LICENSE = <<'END_LICENSE';
-
+gpl_license=$(cat <<'END_LICENSE'
 /*
-    -Insert project name and what it does.-
+    -Insert project name and what it does-
     Copyright (C) 2018 faraco <skelic3@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
@@ -27,6 +26,6 @@ my $GPL_LICENSE = <<'END_LICENSE';
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 END_LICENSE
+)
 
-print $_;
-print $GPL_LICENSE if $_ =~ /\"use strict\";/;
+sed -i '1 s/^/YES!\n/' lol
