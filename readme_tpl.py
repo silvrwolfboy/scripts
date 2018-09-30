@@ -22,28 +22,22 @@ def license_template():
         return "GPL-3.0"
 
 def write_readme():
-    TEMPLATE = """# {}
+    TEMPLATE = """{}
+---------------
 
-## Getting Started
+Getting Started
+----------------
 
-### Prerequisites
-
-### Running the program
-
-
-## Running the tests
-
-
-## Author
-
-* [faraco](https://github.com/faraco) <skelic3@gmail.com>
+Author
+------
+faraco <skelic3 at gmail dot com>
         
-## License
-
+License
+--------
 This project is licensed under the {} License - see the LICENSE file for details.
     """.format(PROJECT_NAME, license_template())
 
-    with open('README.md','w') as f:
+    with open('README','w') as f:
         f.write(TEMPLATE)
 
 write_readme()
