@@ -8,25 +8,23 @@ Programs Descriptions
 
 * mkreadme.c - C program to generate README.md and LICENSE (license) templates
 
-* install_perl_ai_mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
+* install-perl-ai-mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
 
-* install_liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
+* install-liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
 
-* lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security restrictions (you need to install it by yourself and insert your custom passwords and configs).
-
-* ext.sh - Gives extension of a file.
+* lxc/lxc-templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security restrictions (you need to install it by yourself and insert your custom passwords and configs).
 
 * chars.sh - Generate random strings.
 
-* df_alert.sh - Alert user if /dev/sda1 storage size exceeds 60%.
+* df-alert.sh - Alert user if /dev/sda1 storage size exceeds 60%.
 
 * cap.py - Append GPL3 license notice to the top of a non-blank existing file.
 
 * ghb.py - Backup all of my Github's public repositories to local computer.
 
-* install_rvm_ruby.sh - Install rvm, latest ruby and bunch of commonly used ruby on rails web development gems for Ubuntu distro with pre-setup.
+* install-rvm-ruby.sh - Install rvm, latest ruby and bunch of commonly used ruby on rails web development gems for Ubuntu distro with pre-setup.
 
-* install_mono_stack.sh - Install mono runtime, Rosyln compiler, Monodevelop, local Mono's web server (if you want to use ASP.NET MVC without dealing with external server configs), GTK3.0 binding (no Glade 3 however) for C# (aka gtksharp3), and the actual free MonoDevelop C# IDE (v6.2.0).
+* install-mono-stack.sh - Install mono runtime, Rosyln compiler, Monodevelop, local Mono's web server (if you want to use ASP.NET MVC without dealing with external server configs), GTK3.0 binding (no Glade 3 however) for C# (aka gtksharp3), and the actual free MonoDevelop C# IDE (v6.2.0).
 
 * olw.pl - Simple HTML template generator perl script for my 'old-school' personal site.
 
