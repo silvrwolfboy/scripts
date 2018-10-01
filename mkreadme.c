@@ -53,47 +53,47 @@ void cp_license(char *license)
 char *license_template(char *choice)
 {
 	if (strcmp(choice, "bsd") == 0) {
-	        cp_license("bsd");
+		cp_license("bsd");
 		return "BSD";
 	}
-	
+
 	else if (strcmp(choice, "BSD2") == 0) {
-	        cp_license("bsd");
+		cp_license("bsd");
 		return "BSD";
 	}
-	
+
 	else if (strcmp(choice, "apache2") == 0) {
-	        cp_license("apache2");
+		cp_license("apache2");
 		return "Apache-2.0";
 	}
-	
+
 	else if (strcmp(choice, "APACHE2") == 0) {
-	        cp_license("apache2");
+		cp_license("apache2");
 		return "Apache-2.0";
 	}
-	
+
 	else if (strcmp(choice, "mit") == 0) {
-	        cp_license("mit");
+		cp_license("mit");
 		return "MIT";
 	}
-	
+
 	else if (strcmp(choice, "MIT") == 0) {
-	        cp_license("mit");
+		cp_license("mit");
 		return "MIT";
 	}
-	
+
 	else if (strcmp(choice, "gpl3") == 0) {
-	        cp_license("gpl3");
+		cp_license("gpl3");
 		return "GPL-3.0";
 	}
-	
+
 	else if (strcmp(choice, "GPL3") == 0) {
-	        cp_license("gpl3");
+		cp_license("gpl3");
 		return "GPL-3.0";
 	}
-	
+
 	else {
-	        cp_license("gpl3");       
+		cp_license("gpl3");
 		return "GPL-3.0";
 	}
 }
