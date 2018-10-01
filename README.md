@@ -1,19 +1,9 @@
 scripts
 -------
-Some useful Linux system administration scripts.
+Some useful Linux system administration programs that I use.
 
-note
-----
-* cronjobs/ directory are for cron jobs scripts.
-
-scripts description
----
-* linux_packages.sh - install sysadmin package bundle for either debian or redhat family distro
-
-* torcheck.pl -  Check if user connected through tor layer network (for torsocks user)
-
-* cronjobs/maintainance_update.sh - specific system sysadmin's tools upgrade
-
+Programs Descriptions
+---------------------
 * centos6 - Scripts for centos6, to configure local cpanm and root httpd install
 
 * mkreadme.c - C program to generate README.md and LICENSE (license) templates
@@ -22,13 +12,7 @@ scripts description
 
 * install_liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
 
-* lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security (you need to install it by yourself and insert your custom passwords and configs).
-
-* laravel_deps.sh - Install required php (v7.+) extensions for laravel's 5.4+ web framework
-
-* server_here.sh - python3 http.server wrapper
-
-* stop_mysqld.sh - Stop if mysqld (daemon) is running.
+* lxc/lxc_templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security restrictions (you need to install it by yourself and insert your custom passwords and configs).
 
 * ext.sh - Gives extension of a file.
 
@@ -39,8 +23,6 @@ scripts description
 * cap.py - Append GPL3 license notice to the top of a non-blank existing file.
 
 * ghb.py - Backup all of my Github's public repositories to local computer.
-
-* psgi_heroku.sh - Create Heroku's stack for Perl 5 + Plack web application hosting.
 
 * install_rvm_ruby.sh - Install rvm, latest ruby and bunch of commonly used ruby on rails web development gems for Ubuntu distro with pre-setup.
 
