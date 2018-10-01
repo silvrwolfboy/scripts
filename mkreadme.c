@@ -11,12 +11,15 @@ static void write_readme(char *, char *);
  * and your project had to be 'infected' with GPL3 copyleft license eventually. */
 void cp_license(char *license)
 {
+	char *bsd2_path = "/usr/share/common-licenses/BSD";
 	char *apache2_path = "/usr/share/common-licenses/Apache-2.0";
 	char *mit_path = "/usr/share/common-licenses/MIT";
 	char *gpl3_path = "/usr/share/common-licenses/GPL-3";
 	char *alicense;
 
-	if (strcmp(license, "apache2") == 0)
+	if (strcmp(license, "bsd2") == 0)
+		alicense = bsd2_path;
+	else if (strcmp(license, "apache2") == 0)
 		alicense = apache2_path;
 	else if (strcmp(license, "mit") == 0)
 		alicense = mit_path;
@@ -49,7 +52,11 @@ void cp_license(char *license)
 
 char *license_template(char *choice)
 {
-	if (strcmp(choice, "apache2") == 0)
+	if (strcmp(choice, "bsd2") == 0)
+		return "bsd2";
+	else if (strcmp(choice, "BSD2") == 0)
+		return "bsd2";
+	else if (strcmp(choice, "apache2") == 0)
 		return "apache2";
 	else if (strcmp(choice, "APACHE2") == 0)
 		return "apache2";
@@ -93,8 +100,7 @@ void write_readme(char *projn, char *license)
 int main(int argc, char **argv)
 {
 	if (argc != 3) {
-		fprintf(stderr,
-			"Error: need 2 arguments to run.\n");
+		fprintf(stderr, "Error: need 2 arguments to run.\n");
 		exit(1);
 	}
 
