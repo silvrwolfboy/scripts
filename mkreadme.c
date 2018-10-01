@@ -52,42 +52,25 @@ void cp_license(char *license)
 
 char *license_template(char *choice)
 {
-	if (strcmp(choice, "bsd") == 0) {
+	if ((strcmp(choice, "bsd") == 0) || (strcmp(choice, "BSD") == 0)) {
 		cp_license("bsd");
 		return "BSD";
 	}
 
-	else if (strcmp(choice, "BSD2") == 0) {
-		cp_license("bsd");
-		return "BSD";
-	}
-
-	else if (strcmp(choice, "apache2") == 0) {
+	else if ((strcmp(choice, "apache2") == 0)
+		 || (strcmp(choice, "APACHE2") == 0)) {
 		cp_license("apache2");
 		return "Apache-2.0";
 	}
 
-	else if (strcmp(choice, "APACHE2") == 0) {
-		cp_license("apache2");
-		return "Apache-2.0";
-	}
-
-	else if (strcmp(choice, "mit") == 0) {
+	else if ((strcmp(choice, "mit") == 0)
+		 || (strcmp(choice, "MIT") == 0)) {
 		cp_license("mit");
 		return "MIT";
 	}
 
-	else if (strcmp(choice, "MIT") == 0) {
-		cp_license("mit");
-		return "MIT";
-	}
-
-	else if (strcmp(choice, "gpl3") == 0) {
-		cp_license("gpl3");
-		return "GPL-3.0";
-	}
-
-	else if (strcmp(choice, "GPL3") == 0) {
+	else if ((strcmp(choice, "gpl3") == 0)
+		 || (strcmp(choice, "GPL3") == 0)) {
 		cp_license("gpl3");
 		return "GPL-3.0";
 	}
@@ -101,7 +84,7 @@ char *license_template(char *choice)
 void write_readme(char *projn, char *license)
 {
 	FILE *fh;
-	fh = fopen("README.md", "w");
+	fh = fopen("README", "w");
 
 	if (fh == NULL) {
 		fprintf(stderr, "Error: cannot open README.md file\n");
