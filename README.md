@@ -46,8 +46,6 @@ scripts description
 
 * install_mono_stack.sh - Install mono runtime, Rosyln compiler, Monodevelop, local Mono's web server (if you want to use ASP.NET MVC without dealing with external server configs), GTK3.0 binding (no Glade 3 however) for C# (aka gtksharp3), and the actual free MonoDevelop C# IDE (v6.2.0).
 
-* pytempl.sh - Simple script to build a template directory for Python 3 project built on top of readme_tpl.py
-
 * olw.pl - Simple HTML template generator perl script for my 'old-school' personal site.
 
 * csc-bundler.sh - A simple Chicken Scheme bundler script to pack everything(eggs, chicken's shared libraries) into a single directory that you can distribute to your friends!
