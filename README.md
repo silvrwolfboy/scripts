@@ -4,15 +4,14 @@ Some useful Linux system administration programs that I use.
 
 Programs Descriptions
 ---------------------
-* centos6 - Scripts for centos6, to configure local cpanm and root httpd install
+* centos6 - Scripts for centos6, to configure local cpanm and root httpd install.
 
-* mkreadme.c - C program to generate README.md and LICENSE (license) templates
+* mkreadme.c - C program to generate README.md and LICENSE (all license can be found in licenses/ directory) templates.
+  - Copy all licenses/ content into /usr/share/common-licenses directory to use.                
 
-* install-perl-ai-mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies
+* install-perl-ai-mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies.
 
-* install-liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir)
-
-* lxc/lxc-templates/lxc-ubuntu - Custom lxc container template for ubuntu. Installs base packages with LAMP tools exception to mysql-server due to security restrictions (you need to install it by yourself and insert your custom passwords and configs).
+* install-liteide32.sh - Bash script to install LiteIDE 32 bit linux for golang into /usr/local/ (except for .desktop file which goes to $HOME specific dir).
 
 * chars.sh - Generate random strings.
 
@@ -29,3 +28,8 @@ Programs Descriptions
 * olw.pl - Simple HTML template generator perl script for my 'old-school' personal site.
 
 * csc-bundler.sh - A simple Chicken Scheme bundler script to pack everything(eggs, chicken's shared libraries) into a single directory that you can distribute to your friends!
+
+License
+-------
+This project is licensed under the BSD-3-Clause license. See LICENSE file for details.
+

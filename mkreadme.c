@@ -6,15 +6,12 @@ static void cp_license(char *);
 static char *license_template(char *);
 static void write_readme(char *, char *);
 
-/* use GPL3 license as default because many other libraries use GPL3
- * and sooner or later, you might need to use those libraries
- * and your project had to be 'infected' with GPL3 copyleft license eventually. */
 void cp_license(char *license)
 {
-	char *bsd_path = "/usr/share/common-licenses/BSD";
+	char *bsd_path = "/usr/share/common-licenses/BSD-3-Clause";
 	char *apache2_path = "/usr/share/common-licenses/Apache-2.0";
 	char *mit_path = "/usr/share/common-licenses/MIT";
-	char *gpl3_path = "/usr/share/common-licenses/GPL-3";
+	char *gpl3_path = "/usr/share/common-licenses/GPL-3.0";
 	char *alicense;
 
 	if (strcmp(license, "bsd") == 0)
@@ -52,9 +49,9 @@ void cp_license(char *license)
 
 char *license_template(char *choice)
 {
-	if ((strcmp(choice, "bsd") == 0) || (strcmp(choice, "BSD") == 0)) {
-		cp_license("bsd");
-		return "BSD";
+	if ((strcmp(choice, "gpl3") == 0) || (strcmp(choice, "GPL3") == 0)) {
+		cp_license("gpl3");
+		return "GPL-3.0";
 	}
 
 	else if ((strcmp(choice, "apache2") == 0)
@@ -69,15 +66,17 @@ char *license_template(char *choice)
 		return "MIT";
 	}
 
-	else if ((strcmp(choice, "gpl3") == 0)
-		 || (strcmp(choice, "GPL3") == 0)) {
-		cp_license("gpl3");
-		return "GPL-3.0";
+	else if ((strcmp(choice, "bsd") == 0)
+		 || (strcmp(choice, "BSD") == 0)
+		 || (strcmp(choice, "bsd3") == 0)
+		 || (strcmp(choice, "BSD3") == 0)) {
+		cp_license("bsd");
+		return "BSD-3-Clause";
 	}
 
 	else {
-		cp_license("gpl3");
-		return "GPL-3.0";
+		cp_license("bsd");
+		return "BSD-3-Clause";
 	}
 }
 
