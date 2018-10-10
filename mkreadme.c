@@ -8,14 +8,17 @@ static void write_readme(char *, char *);
 
 void cp_license(char *license)
 {
-	char *bsd_path = "/usr/share/common-licenses/BSD-3-Clause";
+	char *bsd3_path = "/usr/share/common-licenses/BSD-3-Clause";
+	char *bsd2_path = "/usr/share/common-licenses/BSD-2-Clause";
 	char *apache2_path = "/usr/share/common-licenses/Apache-2.0";
 	char *mit_path = "/usr/share/common-licenses/MIT";
 	char *gpl3_path = "/usr/share/common-licenses/GPL-3.0";
 	char *alicense;
 
-	if (strcmp(license, "bsd") == 0)
-		alicense = bsd_path;
+	if (strcmp(license, "bsd3") == 0)
+		alicense = bsd3_path;
+	else if (strcmp(license, "bsd2") == 0)
+		alicense = bsd2_path;
 	else if (strcmp(license, "apache2") == 0)
 		alicense = apache2_path;
 	else if (strcmp(license, "mit") == 0)
@@ -66,17 +69,23 @@ char *license_template(char *choice)
 		return "MIT";
 	}
 
-	else if ((strcmp(choice, "bsd") == 0)
-		 || (strcmp(choice, "BSD") == 0)
-		 || (strcmp(choice, "bsd3") == 0)
+	else if ((strcmp(choice, "bsd3") == 0)
 		 || (strcmp(choice, "BSD3") == 0)) {
-		cp_license("bsd");
+		cp_license("bsd3");
 		return "BSD-3-Clause";
 	}
 
+	else if ((strcmp(choice, "bsd2") == 0)
+		 || (strcmp(choice, "BSD2") == 0)
+		 || (strcmp(choice, "bsd") == 0)
+		 || (strcmp(choice, "BSD") == 0)) {
+		cp_license("bsd2");
+		return "BSD-2-Clause";
+	}
+
 	else {
-		cp_license("bsd");
-		return "BSD-3-Clause";
+		cp_license("bsd2");
+		return "BSD-2-Clause";
 	}
 }
 
