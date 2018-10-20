@@ -27,6 +27,8 @@ Programs Descriptions
 
 * csc-bundler.sh - A simple Chicken Scheme bundler script to pack everything(eggs, chicken's shared libraries) into a single directory that you can distribute to your friends!
 
+* cigithub - Install Chicken Scheme from remote git repositories.
+
 License
 -------
 This project is licensed under the BSD-3-Clause license. See LICENSE file for details.
