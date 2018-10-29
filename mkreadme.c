@@ -30,7 +30,7 @@ void cp_license(char *license)
 	fh1 = fopen(alicense, "r");
 
 	if (fh1 == NULL) {
-		fprintf(stderr, "Error: Cannot open input file.\n");
+		fprintf(stderr, "Error: Cannot open LICENSE file for reading.\n");
 		exit(1);
 	}
 
@@ -92,7 +92,7 @@ char *license_template(char *choice)
 void write_readme(char *projn, char *license)
 {
 	FILE *fh;
-	fh = fopen("README", "w");
+	fh = fopen("README.md", "w");
 
 	if (fh == NULL) {
 		fprintf(stderr, "Error: cannot open README.md file\n");
