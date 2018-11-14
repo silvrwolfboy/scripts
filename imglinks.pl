@@ -5,7 +5,7 @@
 # Usage: perl imglinks.pl http://myurl.com           #
 # Version: 0.1.0                                     #
 #                                                    #
-# Copyright (C) faraco (BSD-2-Clause)                #
+# Copyright (C) 2018 faraco (BSD-2-Clause)           #
 #                                                    #
 ######################################################
 use strict;
