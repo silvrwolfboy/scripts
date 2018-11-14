@@ -9,7 +9,7 @@ test -z "$GITURL" \
         && printf "\nExample: cigithub https://github.com/Skylisp/cigithub\n\n" >&2 \
         && exit 1
 
-if [[ "$GITURL" = http* ]];then
+if [[ "$GITURL" = https?://(www.)? ]];then
         CTEMPDIR="cigithub-repo-$RANDOM"
          
         printf "* cloning $GITURL to $CTEMPDIR...\n"
