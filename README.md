@@ -29,6 +29,8 @@ Programs Descriptions
 
 * cigithub - Install a Chicken Scheme egg from remote git repositories.
 
+* imglinks.pl - Get images links from a url (http://github.com/ghost)
+
 License
 -------
 This project is licensed under the BSD-3-Clause license. See LICENSE file for details.
