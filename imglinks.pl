@@ -27,15 +27,15 @@ die "URL cannot be reached. Response Status: " . $response->code
     unless $response->code == 200;
 
 my $content = $response->content;
-die "No <img/> element found." if $content !~ m/<img.src=/;
+die "No <img/> element found." if $content !~ m/<img\s+src=/;
 
 my @lines = split(/\n/, $content);
 
 foreach my $line (@lines) {
 
     # just get the links from img element
-    if ($line =~ m/<img.src=/) {
-        $line =~ s/<img.src=["']//;
+    if ($line =~ m/<img\s+src=/) {
+        $line =~ s/<img\s+src=["']//;
         $line =~ s/["'].*//;
         $line =~ s/\s+//;
 
