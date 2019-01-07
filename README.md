@@ -31,6 +31,8 @@ Programs Descriptions
 
 * imglinks.pl - Get images links from a url (http://github.com/ghost)
 
+* chucker.scm - A simple port scanner (of range 1 to 134).
+
 License
 -------
 This project is licensed under the BSD-3-Clause license. See LICENSE file for details.
