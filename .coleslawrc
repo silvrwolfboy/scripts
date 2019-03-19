@@ -1,0 +1,28 @@
+(:author "Momozor"
+ :deploy-dir "/home/momozor/blog/"
+ :domain "https://momozor.github.io"
+ :excerpt-sep "<!--more-->"
+ :feeds ("lisp")
+ :plugins (;(analytics :tracking-code "foo")
+           ;(disqus :shortname "my-site-name")
+           ; (incremental)  ;; *Remove comment to enable incremental builds.
+           (mathjax)
+           (sitemap)
+           (pygments)
+           (static-pages)
+           ; (versioned)    ;; *Remove comment to enable symlinked, timestamped deploys.
+          )
+ :routing ((:post           "posts/~a")
+           (:tag-index      "tag/~a")
+           (:month-index    "date/~a")
+           (:numeric-index  "~d")
+           (:feed           "~a.xml")
+           (:tag-feed       "tag/~a.xml"))
+ :sitenav ((:url "https://momozor.github.io" :name "Home")
+           (:url "https://github.com/momzor" :name "Github")
+           (:url "https://twitter.com/_momozor" :name "Twitter"))
+ :staging-dir "/tmp/coleslaw/"
+ :title "Empowering Curiosity"
+ :theme "readable")
+
+;; * Prerequisites described in plugin docs.
