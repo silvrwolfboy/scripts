@@ -35,5 +35,5 @@ Programs Descriptions
 
 License
 -------
-This project is licensed under the BSD-3-Clause license. See LICENSE file for details.
+This project is licensed under the GPL-3.0 license. See LICENSE file for details.
 
