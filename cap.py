@@ -9,7 +9,7 @@
 
 import sys
 gpl3_license = '''/*    -Insert project name and what it does-
-    Copyright (C) 2018 faraco <skelic3 at gmail dot com>
+    Copyright (C) 2018 momozor <skelic3 at gmail dot com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

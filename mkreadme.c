@@ -105,7 +105,7 @@ void write_readme(char *projn, char *license)
 	    "---------------\n\n"
 	    "Author\n"
 	    "------\n"
-	    "faraco <skelic3 at gmail dot com>\n\n"
+	    "momozor <skelic3 at gmail dot com>\n\n"
 	    "License\n"
 	    "-------\n"
 	    "This project is licensed under the %s license. See the LICENSE file for details.\n";

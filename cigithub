@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Copyright (c) 2018 faraco <skelic3 at gmail dot com>
+## Copyright (c) 2018 momozor <skelic3 at gmail dot com>
 
 GITURL="$1"
 
