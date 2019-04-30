@@ -2,4 +2,6 @@
 
 # Generate random strings
 # By default, if no arguments were supplied than generate 15 chars.
-date +%s | sha256sum| base64 | head -c ${1-15}; echo
+if read -d '' -rN 100 < /dev/urandom; then
+	printf "%.${1:-15}s\n" "${REPLY//[![:alnum:][:punct:]]}"
+fi
