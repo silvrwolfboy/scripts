@@ -2,8 +2,8 @@
 
 # Alert user if storage disk size exceeds 60%
 mapfile X <<< "$(df -h /dev/sda1)"
-read -a X <<< ${X[1]}
-if [ "${X[4]%\%}" -lt 60 ]; then
+read -ra X <<< "${X[1]}"
+if [ "${X[4]%\%}" -gt 60 ]; then
 	cat <<-EOF
 
 		        Alert!!!
