@@ -8,7 +8,7 @@ Programs Descriptions
 
 * centos6 - Scripts for centos6, to configure local cpanm and root httpd install.
 
-* mkreadme.c - C program to generate README.md and LICENSE (all license can be found in licenses/ directory) templates.
+* mkreadme.c - A shell program to generate README.md and LICENSE (all license can be found in licenses/ directory) templates.
   - Copy all licenses/ content into /usr/share/common-licenses directory to use.                
 
 * install-perl-ai-mxnet.sh - Bash script to install Perl's AI::MXNet from CPAN without manually dealing with its external dependencies.
