@@ -4,6 +4,8 @@ Some useful Linux system administration programs that I use.
 
 Programs Descriptions
 ---------------------
+* add cordova app (android) maker script - You'll need an emptyproject of cordova with android platform installed to run (name the dir as emptyProject)
+
 * centos6 - Scripts for centos6, to configure local cpanm and root httpd install.
 
 * mkreadme.c - C program to generate README.md and LICENSE (all license can be found in licenses/ directory) templates.
