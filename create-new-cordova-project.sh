@@ -11,4 +11,8 @@ sed -i "s/emptyProject/$project_name/" config.xml
 echo "Replacing emptyProject paths with $1"
 cordova platform remove android
 cordova platform add android
+rm -rf .git
+echo "node_modules/" >> .gitignore
+echo "platforms/android/app" >> .gitignore
+git init
 echo "Done"
