@@ -38,8 +38,7 @@ then
                 && printf "\n* error: failed to install egg. Please ensure egg_name.setup exists in the directory\n\n" \
                 >&2 && exit 1
 
-        printf "\n* success: installation successful\n\n"
-        exit 0
+        printf "\n* success: installation successful\n\n" && exit 0
 
 elif test -z "$(echo "$GITURL" | awk '/http*/ {print}')"
 then
