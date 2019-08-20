@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 ## Copyright (c) 2018-2019 momozor <skelic3 at gmail dot com>
 
 GITURL="$1"
 
-command -v git &> /dev/null
+command -v git  >&2 /dev/null
 test $? -ne 0 \
         && printf "\n* error: git command is not exist in your PATH" >&2 \
         && exit 1
@@ -24,7 +24,7 @@ then
         CTEMPDIR="$(mktemp -d)"
          
         echo "* cloning $GITURL to $CTEMPDIR/cigithub-tmp..."
-        git clone "$GITURL" "$CTEMPDIR/cigithub-tmp" &> /dev/null
+        git clone "$GITURL" "$CTEMPDIR/cigithub-tmp" >&2 /dev/null
         test $? -ne 0 \
                 && printf "\n* error: failed to clone repository. Please ensure URL is valid.\n\n" >&2 \
                 && exit 1
@@ -32,7 +32,7 @@ then
         cd "$CTEMPDIR/cigithub-tmp" || exit
 
         echo "* installing egg to $CHICKEN_REPOSITORY.."
-        chicken-install "$(ls ./*.setup)" &> /dev/null
+        chicken-install "$(ls ./*.setup)" >&1 /dev/null >&2 /dev/null
         test $? -ne 0 \
                 && printf "\n* error: failed to install egg. Please ensure egg_name.setup exists in the directory\n\n" \
                 >&2 && exit 1
