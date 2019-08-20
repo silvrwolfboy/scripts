@@ -4,14 +4,15 @@
 
 GITURL="$1"
 
-command -v git  >&2 /dev/null
+command -v git 1> /dev/null 2> /dev/null
 test $? -ne 0 \
-        && printf "\n* error: git command is not exist in your PATH" >&2 \
+        && printf "\n* error: git command is not exist in your PATH\n\n" >&2 \
         && exit 1
 
 # set with export CHICKEN_REPOSITORY=...
+# or invoke as CHICKEN_REPOSITORY=... sh ./cigithub.sh
 test -z "$CHICKEN_REPOSITORY" \
-        && printf "\n\$CHICKEN_REPOSITORY env var is not set!\n\n" >&2 \
+        && printf "\n* error: \$CHICKEN_REPOSITORY env var is not set!\n\n" >&2 \
         && exit 1
 
 test -z "$GITURL" \
@@ -23,25 +24,25 @@ if test -n "$(echo "$GITURL" | awk '/https?://(www.)?/ {print}')"
 then
         CTEMPDIR="$(mktemp -d)"
          
-        echo "* cloning $GITURL to $CTEMPDIR/cigithub-tmp..."
-        git clone "$GITURL" "$CTEMPDIR/cigithub-tmp" >&2 /dev/null
+        echo "** cloning $GITURL to $CTEMPDIR/cigithub-tmp..."
+        git clone "$GITURL" "$CTEMPDIR/cigithub-tmp" 1> /dev/null 2> /dev/null
         test $? -ne 0 \
                 && printf "\n* error: failed to clone repository. Please ensure URL is valid.\n\n" >&2 \
                 && exit 1
 
         cd "$CTEMPDIR/cigithub-tmp" || exit
 
-        echo "* installing egg to $CHICKEN_REPOSITORY.."
-        chicken-install "$(ls ./*.setup)" >&1 /dev/null >&2 /dev/null
+        echo "** installing egg to $CHICKEN_REPOSITORY.."
+        chicken-install "$(ls ./*.setup)" 1> /dev/null 2> /dev/null
         test $? -ne 0 \
                 && printf "\n* error: failed to install egg. Please ensure egg_name.setup exists in the directory\n\n" \
                 >&2 && exit 1
 
-        printf "\ninstallation successful\n\n"
+        printf "\n* success: installation successful\n\n"
         exit 0
 
 elif test -z "$(echo "$GITURL" | awk '/http*/ {print}')"
 then
-        echo "argument must be a valid http(s) URL" >&2 \
-        exit 1
+        printf "\n* error: argument must be a valid http(s) URL\n\n" >&2 \
+        && exit 1
 fi
