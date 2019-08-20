@@ -9,6 +9,7 @@ test $? -ne 0 \
         && printf "\n* error: git command is not exist in your PATH" >&2 \
         && exit 1
 
+# set with export CHICKEN_REPOSITORY=...
 test -z "$CHICKEN_REPOSITORY" \
         && printf "\n\$CHICKEN_REPOSITORY env var is not set!\n\n" >&2 \
         && exit 1
