@@ -19,8 +19,6 @@ Programs Descriptions
 
 * df-alert.sh - Alert user if /dev/sda1 storage size exceeds 60%.
 
-* cap.py - Append Gpl-3 or bsd3 license notice to the top of a non-blank existing file.
-
 * ghb.py - Backup all of my Github's public repositories to local computer.
 
 * install-rvm-ruby.sh - Install rvm, latest ruby and bunch of commonly used ruby on rails web development gems for Ubuntu distro with pre-setup.
