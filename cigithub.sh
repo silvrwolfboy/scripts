@@ -20,7 +20,7 @@ test -z "$GITURL" \
         && printf "\nExample: cigithub https://github.com/Skylisp/cigithub\n\n" >&2 \
         && exit 1
 
-if test -n "$(echo "$GITURL" | awk '/https?://(www.)?/ {print}')"
+if [ -n "$(echo "$GITURL" | awk '/https?://(www.)?/ {print}')" ]
 then
         CTEMPDIR="$(mktemp -d)"
          
@@ -40,7 +40,7 @@ then
 
         printf "\n* success: installation successful\n\n" && exit 0
 
-elif test -z "$(echo "$GITURL" | awk '/http*/ {print}')"
+elif [ -z "$(echo "$GITURL" | awk '/http*/ {print}')" ]
 then
         printf "\n* error: argument must be a valid http(s) URL\n\n" >&2 \
         && exit 1
